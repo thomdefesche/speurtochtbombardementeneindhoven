@@ -30,3 +30,29 @@ body {
 	padding:0;
 	height:100%;
 }
+
+nav ul {
+  list-style-type: none; /* Removes default list styling */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centers the menu if desired */
+}
+
+nav li {
+  display: inline-block; /* Displays list items inline */
+  margin-right: 10px; /* Adds some space between the buttons */
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px; /* Adjusts the size of the buttons */
+  background-color: #007bff; /* Example button color */
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline from links */
+  border-radius: 5px; /* Optional: rounds the corners of the buttons */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
