@@ -29,7 +29,8 @@ body {
 	margin:0;
 	padding:0;
 	height:100%;
-  color: #E1E1E1;
+  background-image: url("images/background.jpg");
+  background-size: cover;
 }
 
 nav ul {
@@ -37,6 +38,8 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center; /* Centers the menu if desired */
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 nav li {
@@ -56,4 +59,16 @@ nav a {
 
 nav a:hover {
   background-color: #171717; /* Darker shade on hover */
+}
+
+div.content {
+  height: 100%; /* Make sure the body takes up the full viewport height */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack flex items vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
 }
