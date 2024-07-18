@@ -29,6 +29,7 @@ body {
 	margin:0;
 	padding:0;
 	height:100%;
+  color: #E1E1E1;
 }
 
 nav ul {
@@ -46,7 +47,7 @@ nav li {
 nav a {
   display: inline-block;
   padding: 10px 20px; /* Adjusts the size of the buttons */
-  background-color: #007bff; /* Example button color */
+  background-color: #696969; /* Example button color */
   color: white; /* Text color */
   text-decoration: none; /* Removes underline from links */
   border-radius: 5px; /* Optional: rounds the corners of the buttons */
@@ -54,5 +55,5 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #171717; /* Darker shade on hover */
 }
