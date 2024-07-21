@@ -134,8 +134,8 @@ hr.headerDivider {
   padding: 10px 0; /* Adjust padding */
   text-decoration: none;
   color: white;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   text-align: left; /* left align the links */
 }
 
