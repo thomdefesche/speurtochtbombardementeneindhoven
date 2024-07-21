@@ -34,7 +34,7 @@ body {
   overflow: hidden;
 }
 
-nav ul {
+.non-mobile-nav ul {
   list-style-type: none; /* Removes default list styling */
   margin: 0;
   padding: 0;
@@ -43,12 +43,12 @@ nav ul {
   font-weight: bold;
 }
 
-nav li {
+.non-mobile-nav li {
   display: inline-block; /* Displays list items inline */
   margin-right: 10px; /* Adds some space between the buttons */
 }
 
-nav a {
+.non-mobile-nav a {
   display: inline-block;
   padding: 10px 20px; /* Adjusts the size of the buttons */
   background-color: #696969; /* Example button color */
@@ -58,7 +58,7 @@ nav a {
   transition: background-color 0.3s; /* Smooth background color transition on hover */
 }
 
-nav a:hover {
+.non-mobile-nav a:hover {
   background-color: #171717; /* Darker shade on hover */
 }
 
@@ -72,4 +72,100 @@ div.content {
   color: white;
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  cursor: pointer;
+  /* Styling for the hamburger bars */
+}
+
+.non-mobile-nav-menu {
+  display: none;
+}
+  
+.hamburger-menu .bar {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin: 5px auto;
+  background-color: #156082;
+}
+
+hr.headerDivider {
+  width: 100%;
+  border: 10;
+  height: 10px;
+  background-color: #156082;
+  color: #156082;
+}
+
+/* Popup Menu */
+.menu-popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Use fixed to make it appear over content */
+  left: 60%;
+  top: 60%;
+  transform: translate(-40%, -40%); /* Center the popup */
+  width: 80%; /* Adjust based on your preference */
+  max-width: 200px; /* Maximum width */
+  background-color: #696969; /* Example button color */
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline from links */
+  border-radius: 5px; /* Optional: rounds the corners of the buttons */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+  z-index: 100; /* Ensure it's above other content */
+}
+
+.menu-popup.active {
+  display: block; /* Shown when the 'active' class is added */
+  /* Other styling properties for the active state */
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 20px; /* Add padding for spacing */
+  margin: 0;
+  color: #262523;
+}
+
+.mobile-nav ul li a {
+  display: block;
+  padding: 10px 0; /* Adjust padding */
+  text-decoration: none;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  text-align: left; /* left align the links */
+}
+
+.menu-popup.active {
+  display: block; /* Show the popup */
+}
+
+
+
+@media (min-width: 768px) {
+  .hamburger-menu {
+      display: none;
+  }
+
+  .menu-popup.active {
+    display: none; /* clear the popup */
+  }
+
+  .non-mobile-nav-menu {
+      display: block; 
+  }
+
+  .mobile-nav {
+      display: block;
+      position: static;
+      width: auto;
+  }
+
+  .mobile-nav ul li {
+      display: inline;
+      margin-right: 20px;
+  }
 }
