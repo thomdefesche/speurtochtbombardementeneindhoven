@@ -63,15 +63,20 @@ body {
 }
 
 div.content {
-  height: 100%; /* Make sure the body takes up the full viewport height */
-  margin: 0; /* Remove default margin */
-  display: flex; /* Enable flexbox */
+  /*height: 100%; /* Make sure the body takes up the full viewport height */
+  margin: 20px; /* Remove default margin */
+  display: flex;  /*Enable flexbox */
   flex-direction: column; /* Stack flex items vertically */
   justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  align-items: top; /* Center content vertically */
   color: white;
+  background-color: #156082;
   font-family: 'Libre Baskerville', serif;
-  font-weight: 400;
+  font-weight: 100;
+  font-size: small;
+  opacity: 0.6;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 /* Hamburger Menu */
@@ -94,8 +99,8 @@ div.content {
 
 hr.headerDivider {
   width: 100%;
-  border: 10;
-  height: 10px;
+  border: 1;
+  height: 1px;
   background-color: #156082;
   color: #156082;
 }
@@ -148,6 +153,16 @@ hr.headerDivider {
 @media (min-width: 768px) {
   .hamburger-menu {
       display: none;
+  }
+  
+  div.content {
+    font-weight: 100;
+    font-size: 100%;
+  }
+  
+  hr.headerDivider {
+    border: 10;
+    height: 10px;
   }
 
   .menu-popup.active {
