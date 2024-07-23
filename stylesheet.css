@@ -39,7 +39,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center; /* Centers the menu if desired */
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Special Elite';
   font-weight: bold;
 }
 
@@ -75,7 +75,7 @@ div.content {
   align-items: top; /* Center content vertically */
   color: white;
   background-color: #156082;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Special Elite';
   font-weight: 100;
   font-size: small;
   opacity: 0.6;
@@ -158,7 +158,7 @@ hr.headerDivider {
   padding: 2px 0; /* Adjust padding */
   text-decoration: none;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Special Elite';
   font-weight: bold;
   text-align: left; /* left align the links */
 }
