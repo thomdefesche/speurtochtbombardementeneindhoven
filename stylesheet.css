@@ -188,7 +188,7 @@ hr.headerDivider {
   display: none; /* Hidden by default */
   position: fixed; /* Use fixed to make it appear over content */
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%); /* Center the popup */
   width: 80%; /* Adjust based on your preference */
   max-width: 200px; /* Maximum width */
