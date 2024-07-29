@@ -25,16 +25,23 @@
             <nav class="mobile-nav">
                 <ul>
                     <li><a href="index.html" target="_parent">Home</a></li>
-                    <li><a href="sinterklaas1.html" target="_parent">Sinterklaas vraag 1</a></li>
-                    <li><a href="sinterklaas2.html" target="_parent">Sinterklaas vraag 2</a></li>
-                    <li><a href="sinterklaas3.html" target="_parent">Sinterklaas vraag 3</a></li>
-                    <li><a href="sinterklaas4.html" target="_parent">Sinterklaas vraag 4</a></li>
-                    <li><a href="sinterklaas5.html" target="_parent">Sinterklaas vraag 5</a></li>
-                    <li><a href="19september1.html" target="_parent">19 september vraag 1</a></li>
-                    <li><a href="19september2.html" target="_parent">19 september vraag 2</a></li>
-                    <li><a href="19september3.html" target="_parent">19 september vraag 3</a></li>
-                    <li><a href="19september4.html" target="_parent">19 september vraag 4</a></li>
-                    <li><a href="19september5.html" target="_parent">19 september vraag 5</a></li>
+                    <li>
+                        <a href="#">Sinterklaasbombardement</a>
+                        <ul>
+                            <li><a href="sinterklaasbombardement_algemeen.html" target="_parent">Algemeen</a></li>
+                            <li><a href="sinterklaasbombardement_philips.html" target="_parent">Philips fabrieken in de oorlog</a></li>
+                            <li><a href="sinterklaasbombardement_cijfers.html" target="_parent">Bombardement in cijfers</a></li>
+                            <li><a href="sinterklaasbombardement_raf.html" target="_parent">RAF</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Duits bombardement</a>
+                        <ul>
+                            <li><a href="duitsbombardement_bevrijding.html" target="_parent">Bevrijding</a></li>
+                            <li><a href="duitsbombardement_aanval.html" target="_parent">Duitse aanval</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="wederopbouw.html" target="_parent">Wederopbouw</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,16 +49,25 @@
             <nav class="non-mobile-nav">
                 <ul>
                     <li><a href="index.html" target="_parent">Home</a></li>
-                    <li><a href="sinterklaas1.html" target="_parent">Sinterklaas vraag 1</a></li>
-                    <li><a href="sinterklaas2.html" target="_parent">Sinterklaas vraag 2</a></li>
-                    <li><a href="sinterklaas3.html" target="_parent">Sinterklaas vraag 3</a></li>
-                    <li><a href="sinterklaas4.html" target="_parent">Sinterklaas vraag 4</a></li>
-                    <li><a href="sinterklaas5.html" target="_parent">Sinterklaas vraag 5</a></li>
-                    <li><a href="19september1.html" target="_parent">19 september vraag 1</a></li>
-                    <li><a href="19september2.html" target="_parent">19 september vraag 2</a></li>
-                    <li><a href="19september3.html" target="_parent">19 september vraag 3</a></li>
-                    <li><a href="19september4.html" target="_parent">19 september vraag 4</a></li>
-                    <li><a href="19september5.html" target="_parent">19 september vraag 5</a></li>
+                    <li class="submenulink">
+                        <a href="#">Sinterklaasbombardement</a>
+                        <ul class="submenu">
+                            <li><a href="sinterklaasbombardement_algemeen.html" target="_parent">Algemeen</a></li>
+                            <li><a href="sinterklaasbombardement_philips.html" target="_parent">Philips fabrieken in de oorlog</a></li>
+                            <li><a href="sinterklaasbombardement_cijfers.html" target="_parent">Bombardement in cijfers</a></li>
+                            <li><a href="sinterklaasbombardement_raf.html" target="_parent">RAF</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="submenulink">
+                        <a href="#">Duits bombardement</a>
+                        <ul class="submenu">
+                            <li><a href="duitsbombardement_bevrijding.html" target="_parent">Bevrijding</a></li>
+                            <li><a href="duitsbombardement_aanval.html" target="_parent">Duitse aanval</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="wederopbouw.html" target="_parent">Wederopbouw</a></li>
                 </ul>
             </nav>
             <hr class="headerDivider"/>
@@ -75,14 +91,13 @@
     </div>
 </body>
 <script>
-    document.querySelector('.bar1').addEventListener('click', function() {
-        document.querySelector('.menu-popup').classList.toggle('active');
-    });
-    document.querySelector('.bar2').addEventListener('click', function() {
-        document.querySelector('.menu-popup').classList.toggle('active');
-    });
-    document.querySelector('.bar3').addEventListener('click', function() {
-        document.querySelector('.menu-popup').classList.toggle('active');
+    document.addEventListener('DOMContentLoaded', function() {
+      // Toggle menu popup visibility
+      document.querySelectorAll('.bar1, .bar2, .bar3').forEach(function(bar) {
+        bar.addEventListener('click', function() {
+          document.querySelector('.menu-popup').classList.toggle('active');
+        });
+      });
     });
 </script>
 </html>
