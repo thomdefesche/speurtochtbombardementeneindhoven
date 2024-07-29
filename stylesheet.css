@@ -189,7 +189,7 @@ hr.headerDivider {
   position: fixed; /* Use fixed to make it appear over content */
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -20%); /* Center the popup */
+  transform: translate(-50%, -10%); /* Center the popup */
   width: 80%; /* Adjust based on your preference */
   max-width: 200px; /* Maximum width */
   background-color: #696969; /* Example button color */
