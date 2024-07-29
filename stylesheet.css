@@ -246,6 +246,11 @@ hr.headerDivider {
     font-weight: 100;
     font-size: 100%;
   }
+
+  div.content-heading {
+    font-weight: bold;
+    font-size: 100%;
+  }
   
   hr.headerDivider {
     border: 10;
