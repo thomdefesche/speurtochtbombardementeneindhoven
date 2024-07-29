@@ -120,6 +120,11 @@ div.content {
   padding: 20px;
 }
 
+iframe.embedded-video {
+  opacity: 1 !important;
+  background-color: black;
+}
+
 div.content-heading {
   /*height: 100%; /* Make sure the body takes up the full viewport height */
   margin: 20px; /* Remove default margin */
