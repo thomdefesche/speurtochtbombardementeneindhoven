@@ -120,6 +120,22 @@ div.content {
   padding: 20px;
 }
 
+div.content-heading {
+  /*height: 100%; /* Make sure the body takes up the full viewport height */
+  margin: 20px; /* Remove default margin */
+  display: flex;  /*Enable flexbox */
+  flex-direction: column; /* Stack flex items vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: top; /* Center content vertically */
+  color: white;
+  background-color: #156082;
+  font-family: 'Special Elite';
+  font-weight: bold;
+  opacity: 0.6;
+  border-radius: 20px;
+  padding: 20px;
+}
+
 .non-mobile-nav-menu {
   display: none;
 }
@@ -179,6 +195,13 @@ hr.headerDivider {
   z-index: 100; /* Ensure it's above other content */
   opacity: 0.9;
   border-radius: 20px;
+}
+
+.simpleList {
+
+  list-style-type: disc;
+  margin: 0;
+  padding: 10px;
 }
 
 .menu-popup.active {
