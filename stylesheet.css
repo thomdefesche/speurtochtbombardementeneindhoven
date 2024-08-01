@@ -100,11 +100,15 @@ a.normallink {
 }
 
 img.image {
-  width: 50%;
   display: block;
   opacity: 1;
 }
 
+img.normalimage {
+  width: 75%;
+  display: block;
+  opacity: 1;
+}
 .non-mobile-nav a:hover {
   background-color: #171717; /* Darker shade on hover */
 }
@@ -300,4 +304,10 @@ hr.headerDivider {
     width: 75%;
     display: block;
   }
+
+  img.normalimage {
+    display: block;
+    width: 75%;
+  }
+  
 }
