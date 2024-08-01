@@ -102,6 +102,7 @@ a.normallink {
 img.image {
   display: block;
   opacity: 1;
+  width: 50%;
 }
 
 img.normalimage {
