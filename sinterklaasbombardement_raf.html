@@ -13,12 +13,11 @@
 <body>    
     <header>
         <!-- Hamburger Icon -->
-        <div class="hamburger-menu">
+        <span class="hamburger-menu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-            <hr class="headerDivider"/>
-        </div>
+        </span>
         
         <!-- Popup Menu -->
         <div class="menu-popup">
@@ -80,9 +79,9 @@
                     <li><a href="antwoorden.html" target="_parent">Antwoorden</a></li>
                 </ul>
             </nav>
-            <hr class="headerDivider"/>
         </div>
     </header>
+    <hr class="headerDivider"/>
     <div class="content-heading">Sinterklaasbombardement - Royal Aire Force</div>
     <div class="content">In het verleden had de Royal Air Force al kleinschalige pogingen gedaan om de Philipsfabrieken in Eindhoven te bombarderen. Ondanks die bombardementen bleven de fabrieken operationeel.</div>
     <div class="content">In 1941 kwam daar verandering in. Door de toenemende vliegtuigproductie en de mogelijkheid om  militaire aankopen in Amerika te doen, ontstonden er voor de Royal Air Force meer offensieve luchtacties. Toen Amerika deel ging nemen aan de Tweede Wereldoorlog, kreeg de Royal Air Force de beschikking over nog meer vliegtuigen, onder meer sterke Amerikaanse bommenwerpers.</div>
@@ -98,15 +97,7 @@
     <div class="content">
         <iframe  class="embedded-video" width="100%" height="100%" src="https://www.youtube.com/embed/AZzgDkFvHbI?si=sKyPxf0eBR3NRSpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+    <script src="imagesscript.js"></script>
+    <script src="hamburgermenu.js"></script>
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Toggle menu popup visibility
-      document.querySelectorAll('.bar1, .bar2, .bar3').forEach(function(bar) {
-        bar.addEventListener('click', function() {
-          document.querySelector('.menu-popup').classList.toggle('active');
-        });
-      });
-    });
-</script>
 </html>

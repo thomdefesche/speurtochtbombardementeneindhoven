@@ -13,12 +13,11 @@
 <body>    
     <header>
         <!-- Hamburger Icon -->
-        <div class="hamburger-menu">
+        <span class="hamburger-menu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-            <hr class="headerDivider"/>
-        </div>
+        </span>
         
         <!-- Popup Menu -->
         <div class="menu-popup">
@@ -76,9 +75,9 @@
                     <li><a href="antwoorden.html" target="_parent">Antwoorden</a></li>
                 </ul>
             </nav>
-            <hr class="headerDivider"/>
         </div>
     </header>
+    <hr class="headerDivider"/>
     <div class="content-heading">Wederopbouw</div>
     <div class="content">Na de oorlog moesten grote delen van Eindhoven weer opgebouwd worden. Er is hiervoor een plan gemaakt.</div>
     <div class="content">Belangrijkste onderdelen hiervan waren: 
@@ -95,25 +94,27 @@
             </tr>
             <tr><td>&nbsp;</td></tr>
             <tr>
-                <td class="contentwithimagetd"><img class="image" src="images/wederopbouw1.png"></td>
+                <td class="contentwithimagetd"><img class="image" src="images/wederopbouw1.png" data-modal="myModal1" data-modal-img="img01" data-caption="wederopbouw1">
+                    <div id="myModal1" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption1"></div>
+                </div></td>
                 <td class="contenttd">Operation Oyster, ter herinnering aan alle mensen die zijn omgekomen tijdens het Sinterklaasbombardement.</td>
             </tr>
             <tr><td>&nbsp;</td></tr>
             <tr>
-                <td class="contentwithimagetd"><img class="image" src="images/wederopbouw2.png"></td>
+                <td class="contentwithimagetd"><img class="image" src="images/wederopbouw2.png" data-modal="myModal2" data-modal-img="img02" data-caption="wederopbouw2">
+                    <div id="myModal2" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img02">
+                    <div id="caption2"></div>
+                </div></td>
                 <td class="contenttd">Oorlogs- en Bevrijdingsmonument, ter nagedachtenis aan mensen in of uit Eindhoven die zijn omgekomen tijdens de Tweede Wereldoorlog.</td>
             </tr>
         </table>
     </div>
+    <script src="imagesscript.js"></script>
+    <script src="hamburgermenu.js"></script>
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Toggle menu popup visibility
-      document.querySelectorAll('.bar1, .bar2, .bar3').forEach(function(bar) {
-        bar.addEventListener('click', function() {
-          document.querySelector('.menu-popup').classList.toggle('active');
-        });
-      });
-    });
-</script>
 </html>

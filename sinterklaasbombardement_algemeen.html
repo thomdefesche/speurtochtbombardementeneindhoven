@@ -13,12 +13,11 @@
 <body>    
     <header>
         <!-- Hamburger Icon -->
-        <div class="hamburger-menu">
+        <span class="hamburger-menu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-            <hr class="headerDivider"/>
-        </div>
+        </span>
         
         <!-- Popup Menu -->
         <div class="menu-popup">
@@ -80,27 +79,24 @@
                     <li><a href="antwoorden.html" target="_parent">Antwoorden</a></li>
                 </ul>
             </nav>
-            <hr class="headerDivider"/>
         </div>
     </header>
+    <hr class="headerDivider"/>
     <div class="content-heading">Sinterklaasbombardement - Algemeen</div>
     <div class="content">
         <table style="border-spacing: 10px;">
             <tr>
-                <td class="contentwithimagetd"><img class="image" src="images/sinterklaasbombardement_algemeen.png"></td>
+                <td class="contentwithimagetd"><img class="image" src="images/sinterklaasbombardement_algemeen.png" data-modal="myModal1" data-modal-img="img01" data-caption="sinterklaasbombardement_algemeen">
+                    <div id="myModal1" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption1"></div></td>
                 <td class="contenttd">Zondagmiddag 6 december 1942 brak de hel los in Eindhoven. De naam Sinterklaasbombardement is te danken aan het bombardement dat plaats vond na het sinterklaasfeest. De Britse Royal Air Force voerde een bombardement uit met als doel de Philips fabrieken uit te schakelen, want zij waren in bezit van de Duitsers.</td>
             </tr>
         </table>
     </div>
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Toggle menu popup visibility
-      document.querySelectorAll('.bar1, .bar2, .bar3').forEach(function(bar) {
-        bar.addEventListener('click', function() {
-          document.querySelector('.menu-popup').classList.toggle('active');
-        });
-      });
-    });
-</script>
+<script src="imagesscript.js"></script>
+<script src="hamburgermenu.js"></script>
+</body>
 </html>
