@@ -1,7 +1,3 @@
-function isMobileDevice() {
-    return navigator.userAgentData.mobile;
-}
-
 function setupImageModals() {
     // Get all thumbnail images
     var thumbnails = document.querySelectorAll('.image');
@@ -34,29 +30,6 @@ function setupImageModals() {
             modal.style.display = "none";
         }
 
-        if (!isMobileDevice()) {
-            // Tooltip functionality
-            var tooltip = document.createElement('div');
-            tooltip.className = 'tooltip';
-            tooltip.innerText = 'Klik om een vergroting te zien';
-            document.body.appendChild(tooltip);
-        
-            thumbnail.onmouseover = function(event) {
-                thumbnail.style.cursor = 'pointer';
-                tooltip.style.display = 'block';
-                tooltip.style.left = event.pageX + 'px';
-                tooltip.style.top = event.pageY + 'px';
-            }
-        
-            thumbnail.onmousemove = function(event) {
-                tooltip.style.left = event.pageX + 'px';
-                tooltip.style.top = event.pageY + 'px';
-            }
-        
-            thumbnail.onmouseout = function() {
-                tooltip.style.display = 'none';
-            }
-        }
     });
 }
 
