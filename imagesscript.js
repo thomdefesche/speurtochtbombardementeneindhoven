@@ -1,5 +1,5 @@
 function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
+    return navigator.userAgentData.mobile;
 }
 
 function setupImageModals() {
