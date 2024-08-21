@@ -10,6 +10,7 @@ function setupImageModals() {
 
         // Get the modal
         var modal = document.getElementById(modalId);
+        modal.style.cursor = "default";
 
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         var modalImg = document.getElementById(modalImgId);
@@ -27,6 +28,28 @@ function setupImageModals() {
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
+        }
+
+        // Tooltip functionality
+        var tooltip = document.createElement('div');
+        tooltip.className = 'tooltip';
+        tooltip.innerText = 'Klik om een vergroting te zien';
+        document.body.appendChild(tooltip);
+    
+        thumbnail.onmouseover = function(event) {
+            thumbnail.style.cursor = 'pointer';
+            tooltip.style.display = 'block';
+            tooltip.style.left = event.pageX + 'px';
+            tooltip.style.top = event.pageY + 'px';
+        }
+    
+        thumbnail.onmousemove = function(event) {
+            tooltip.style.left = event.pageX + 'px';
+            tooltip.style.top = event.pageY + 'px';
+        }
+    
+        thumbnail.onmouseout = function() {
+            tooltip.style.display = 'none';
         }
     });
 }

@@ -99,10 +99,22 @@ a.normallink {
   color: white;
 }
 
-img.image {
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: none;
+  z-index: 1000;
+}
+
+.image {
   display: block;
   opacity: 1;
   width: 50%;
+  position: relative;
 }
 
 img.quoteimage {
@@ -254,6 +266,11 @@ hr.headerDivider {
 
 .contentwithimagetd {
   text-align: left;
+  vertical-align: top;
+  width: 50%;
+}
+.contentwithimagetdcentral {
+  text-align: center;
   vertical-align: top;
   width: 50%;
 }
