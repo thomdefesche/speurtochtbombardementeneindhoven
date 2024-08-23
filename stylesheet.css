@@ -285,11 +285,12 @@ hr.headerDivider {
   vertical-align: top;
 }
 
-.contentsplitted {
+.contenttdsmall {
   text-align: left;
   vertical-align: top;
   width: 50%;
 }
+
 
 
 @media (min-width: 768px) {
